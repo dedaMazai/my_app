@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import Header from '../header';
+import Footer from '../footer';
+import Avatar from '../avatar';
+import Tabs from '../tabs';
+import Wallet from '../wallet';
 
 import './mainPage.css';
 export default class MainPage extends Component {
@@ -14,7 +18,21 @@ export default class MainPage extends Component {
     }
     render() {
         return (
-            <Header/>
+            <>
+                <Header/>
+                <ul className="mainPage">
+                    <li className="mainPage ava">
+                        <Avatar/>
+                    </li>
+                    <li className="mainPage tabs">
+                        <Tabs/>
+                    </li>
+                    <li className="mainPage wallet">
+                        <Wallet/>
+                    </li>
+                </ul>
+                <Footer/>
+            </>
         )
     }
 

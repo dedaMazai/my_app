@@ -1,3 +1,10 @@
 body {
     margin: 0;
 }
+
+li.mainPage {
+    list-style-type: none;
+    cursor: pointer;
+    display:inline-block;
+    margin: 20px;
+}
