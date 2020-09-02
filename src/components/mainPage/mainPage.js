@@ -4,6 +4,9 @@ import Footer from '../footer';
 import Avatar from '../avatar';
 import Tabs from '../tabs';
 import Wallet from '../wallet';
+import Rule from '../rule';
+import Price from '../price';
+import Friends from '../friends';
 
 import './mainPage.css';
 export default class MainPage extends Component {
@@ -20,7 +23,7 @@ export default class MainPage extends Component {
         return (
             <>
                 <Header/>
-                <ul className="mainPage">
+                {/* <ul className="mainPage">
                     <li className="mainPage ava">
                         <Avatar/>
                     </li>
@@ -31,7 +34,8 @@ export default class MainPage extends Component {
                         <Wallet/>
                     </li>
                 </ul>
-                <Footer/>
+                <Footer/> */}
+                <Price/>
             </>
         )
     }
