@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from '../header';
+import FooterJob from '../footerJob';
 import Footer from '../footer';
 import Avatar from '../avatar';
 import Tabs from '../tabs';
@@ -7,6 +8,8 @@ import Wallet from '../wallet';
 import Rule from '../rule';
 import Price from '../price';
 import Friends from '../friends';
+import Employer from '../employer';
+import EmployerAdd from '../employerAdd';
 
 import './mainPage.css';
 export default class MainPage extends Component {
@@ -33,9 +36,9 @@ export default class MainPage extends Component {
                     <li className="mainPage wallet">
                         <Wallet/>
                     </li>
-                </ul>
-                <Footer/> */}
-                <Price/>
+                </ul> */}
+                <EmployerAdd/>
+                <Footer/>
             </>
         )
     }
