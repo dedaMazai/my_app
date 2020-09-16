@@ -4,7 +4,7 @@ import './rule.css';
 export default class Rule extends Component {
     render() {
         return (
-            <div className="blok">
+            <div className="ruleBlok">
                 <h1>
                     Правила:
                 </h1>

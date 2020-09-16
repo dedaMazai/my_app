@@ -4,8 +4,8 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import './friends.css';
 export default class Friends extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             value: 'http?fee///',
             copied: false,
@@ -24,7 +24,7 @@ export default class Friends extends Component {
                             <button className="refchBut" >Копировать</button>
                         </CopyToClipboard>
                     </div>
-                    <div className="blok">
+                    <div className="friendBlok">
                         <p>
                             С помощью  нашей реферальной программы вы получаете неограниченный заработок онлайн почти на пассиве.
                             После того, как вы зарегистрировались на нашем ресурсе и прошли верификацию, вы получаете собственную реферальную ссылку.
