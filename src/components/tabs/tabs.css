@@ -1,0 +1,11 @@
+li.tab {
+    list-style-type: none;
+    cursor: pointer;
+    display:inline-block;
+    border-radius: 5px;
+    background-color: #D0ABFF;
+}
+
+ul.tabs {
+    text-align: center;
+}

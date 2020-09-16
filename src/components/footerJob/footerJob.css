@@ -1,0 +1,30 @@
+li.topJob {
+    list-style-type: none;
+    cursor: pointer;
+    display:inline-block;
+    margin: 10px 20px 20px 20px;
+}
+
+ul.topJob {
+    padding: 0px;
+    margin: 0px;
+}
+
+img.topJob {
+    height: 150px;
+    border-radius: 5px;
+}
+
+p.topJob {
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 20px 0px 0px 0px;
+}
+
+.footerJob {
+    text-align: center;
+    background-color: #E0DDDD;
+    border-radius: 10px;
+    margin: 0px 50px;
+}

@@ -1,0 +1,30 @@
+li.footer {
+    color: aliceblue;
+    list-style-type: none;
+    cursor: pointer;
+    display:inline-block;
+    margin: 0 30px 0 30px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+ul.footer {
+    margin: 0;
+    padding: 0;
+}
+
+div.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footerBlock {
+    bottom: 0px;
+    text-align: center;
+    background-color: #F9DCDC;
+    margin: 0;
+    padding: 0px;
+}

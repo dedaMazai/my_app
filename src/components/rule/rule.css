@@ -1,0 +1,12 @@
+.blok {
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 100px;
+    font-size: large;
+}
+
+h1 {
+    margin: 0px;
+}

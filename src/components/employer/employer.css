@@ -1,0 +1,16 @@
+.blokEmploy {
+    background-color: #E0DDDD;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px;
+    margin: 25px 50px;
+    font-size: large;
+}
+
+p.blokEmploy {
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: start;
+    margin: 20px 0px 0px 30px;
+}

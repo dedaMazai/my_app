@@ -1,0 +1,186 @@
+.employerAdd {
+    text-justify: auto;
+    background-color: #E0DDDD;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 120px;
+    font-size: large;
+}
+
+.employerHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.employerCenter{
+    display: flex;
+    flex-direction: column;
+}
+
+.employerPhoto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.employerPhoto .img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.employerCenter .url {
+    padding-left: 5px;
+    font-size: 0.9em;
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.employerCenter .textTer {
+    padding-left: 5px;
+    font-size: 1.2em;
+    width: 100%;
+    height: 200px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.employerCalc .two {
+    display: flex;
+    align-items: baseline;
+    margin-left: 35px;
+}
+
+.employerCalc .one {
+    display: flex;
+    align-items: baseline;
+    margin-right: 35px;
+}
+
+.employerCalc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.employerCalc input {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 1em;
+    height: 30px;
+    margin-left: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.employerPhoto button {
+    background-color: #00BC13;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    height: 30px;
+    width: 250px;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.employerPhoto button:active {
+    background-color: black;
+}
+
+.finalCalc .one {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.finalCalc input {
+    padding-left: 5px;
+    font-size: 1em;
+    height: 30px;
+    margin: 0 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.finalCalc button {
+    background-color: #00BC13;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    height: 50px;
+    width: 10%;
+    min-width: 85px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.finalCalc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.employerText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.employerText .one {
+    background: #7AD884;
+    border-radius: 5px;
+    width: 56px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    float: left;
+    margin-right: 10px;
+}
+
+.employerText .two {
+    background: #46CE54;
+    border-radius: 5px;
+    width: 56px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    float: left;
+    margin-right: 10px;
+}
+
+.employerText .three {
+    background: #00BC13;
+    border-radius: 5px;
+    width: 56px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    float: left;
+    margin-right: 10px;
+}
+
+.close {
+    background-color: #FF0000;
+    color: white;
+    border-radius: 7px;
+    font-size: large;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+button.close {
+    height: 26px;
+    width: 26px;
+}
+
+p.close {
+    transform: rotate(-45deg);
+    padding: 0;
+    margin: 0;
+}
