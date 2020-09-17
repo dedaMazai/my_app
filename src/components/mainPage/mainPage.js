@@ -2,11 +2,9 @@ import React, {Component} from 'react';
 import Header from '../header';
 import FooterJob from '../footerJob';
 import Footer from '../footer';
-import Avatar from '../avatar';
-import Tabs from '../tabs';
-import Wallet from '../wallet';
 import Rule from '../rule';
 import Price from '../price';
+import Profile from '../profile';
 import Friends from '../friends';
 import Employer from '../employer';
 import EmployerAdd from '../employerAdd';
@@ -26,18 +24,8 @@ export default class MainPage extends Component {
         return (
             <>
                 <Header/>
-                {/* <ul className="mainPage">
-                    <li className="mainPage ava">
-                        <Avatar/>
-                    </li>
-                    <li className="mainPage tabs">
-                        <Tabs/>
-                    </li>
-                    <li className="mainPage wallet">
-                        <Wallet/>
-                    </li>
-                </ul> */}
-                <EmployerAdd/>
+                <Profile/>
+                {/* <FooterJob/> */}
                 <Footer/>
             </>
         )
