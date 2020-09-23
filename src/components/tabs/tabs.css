@@ -4,8 +4,58 @@ li.tab {
     display:inline-block;
     border-radius: 5px;
     background-color: #D0ABFF;
+    width: 30%;
+    min-width: 115px;
+    margin: 1%;
+}
+
+li.tab > p {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 12px;
+}
+
+li.tab > h1 {
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+li.tab > h3 {
+    margin: 0px 0px 5px 0px;
+}
+
+
+li.tab1 > h1, li.tab1 > h3 {
+    color: #24AE9E;
+}
+
+li.tab2 > h1, li.tab2 > h3 {
+    color: #FF008A;
+}
+
+li.tab3 > h1, li.tab3 > h3 {
+    color: #82FFF0;
+}
+
+li.tab1 {
+    border: 3px solid #2B6876;
+    background-color: #93EBFF;
+    height: 65%;
+}
+
+li.tab2 {
+    border: 3px solid #851866;
+    background-color: #FFA6E6;
+    height: 25%;
+}
+
+li.tab3 {
+    border: 3px solid #5111A3;
+    background-color: #D0ABFF;
+    height: 45%;
 }
 
 ul.tabs {
     text-align: center;
+    display: flex;
 }
