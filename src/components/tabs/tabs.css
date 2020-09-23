@@ -4,9 +4,8 @@ li.tab {
     display:inline-block;
     border-radius: 5px;
     background-color: #D0ABFF;
-    width: 30%;
     min-width: 115px;
-    margin: 1%;
+    margin: 2%;
 }
 
 li.tab > p {
@@ -41,18 +40,24 @@ li.tab1 {
     border: 3px solid #2B6876;
     background-color: #93EBFF;
     height: 65%;
+    width: 25%;
+    box-shadow: 7px 7px 20px 1px #2B6876;
 }
 
 li.tab2 {
     border: 3px solid #851866;
     background-color: #FFA6E6;
     height: 25%;
+    width: 32%;
+    box-shadow: 0 0 20px 3px #851866;
 }
 
 li.tab3 {
     border: 3px solid #5111A3;
     background-color: #D0ABFF;
     height: 45%;
+    width: 28%;
+    box-shadow: -7px 7px 20px 1px #5111A3;
 }
 
 ul.tabs {

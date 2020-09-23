@@ -22,7 +22,7 @@ div.footer {
 }
 
 .footerBlock {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     width: 100%;
     text-align: center;

@@ -25,7 +25,7 @@ export default class MainPage extends Component {
             <>
                 <Header/>
                 <Profile/>
-                {/* <FooterJob/> */}
+                <FooterJob/>
                 <Footer/>
             </>
         )
