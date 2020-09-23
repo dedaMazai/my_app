@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 
 import './avatar.css';
 export default class Avatar extends Component {
-    constructor() {
-        super();
-    }
     render() {
         return (
             <div className="avatar">

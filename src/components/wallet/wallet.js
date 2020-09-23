@@ -2,17 +2,17 @@ import React, {Component} from 'react';
 
 import './wallet.css';
 export default class Wallet extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
-            <div className="wallet">
-                <div className="three">
-                <p>Money</p>
+            <div class="box">
+                <div class="square">
+                <p class="trian top">Money</p>
+                <div class="triangular">
+                    <div class="circle"></div>
                 </div>
-                <p>233.16р</p>
-                <p>Вывод</p>
+                <p class="trian wallet">223.16 р.</p>
+                <p class="trian out">Вывод</p>
+                </div>
             </div>
         )
     }

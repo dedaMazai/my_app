@@ -1,7 +1,55 @@
-.three {
-    background: #9ADCD4;
+.box{
+    right: 0px;
 }
 
-.wallet {
-    background-color: #82FFF0;
+.square {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 120px;
+    background: #82FFF0;
+    border-radius: 5px;
+    border: 3px solid #29998C;
+    justify-content: center;
+}
+
+.circle {
+    position: absolute;
+    top: 37px;
+    width: 12px;
+    height: 12px;
+    background: #82FFF0;
+    border-radius: 6px;
+}
+
+.triangular {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: #9ADCD4;
+    width: 200px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+}
+
+p.trian {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #027D7D;
+    z-index: 2;
+}
+
+.square > p.top {
+    top: -20px;
+}
+
+.square > p.wallet {
+    top: 37px
+}
+
+.square > p.out {
+    top: 64px;
 }

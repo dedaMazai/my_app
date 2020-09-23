@@ -6,11 +6,11 @@
     cursor: default;
 }
 
-.avafooter {
+ul.avafooter {
     background-color: #83E7DB;
     border-radius: 5px;
     padding: 5px 10px 10px 10px;
-    margin: 10px;
+    margin: 5px;
 }
 
 img.avatar {
