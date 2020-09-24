@@ -1,0 +1,50 @@
+.headPrice {
+    text-align: center;
+    background-color: #E0DDDD;
+    border-radius: 10px;
+    padding: 50px 20px;
+    margin: 30px 120px;
+    font-size: large;
+}
+
+.priceBlok {
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 100px;
+    font-size: large;
+}
+
+.boxPrice {
+    display: flex;
+    margin:  3% 5% 0% 80%;
+    Justify-content: center;
+    flex-direction: center;
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+    background: #BDFF00;
+  }
+
+.boxInPrice {
+    display: flex;
+    Justify-content: center;
+    margin: auto 0;
+    position: relative;
+    border-radius: 75px;
+    width: 130px;
+    height: 130px;
+    background: #D1ED82;
+}
+
+.boxTextPrice {
+    position: absolute;
+    margin: 0;
+    font-size: 5em;
+    font-weight: 800;
+    color: #BDFF00;
+}
+
+.headPrice > h1 {
+    font-size: 1.4em;
+}

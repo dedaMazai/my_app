@@ -24,9 +24,10 @@ export default class MainPage extends Component {
         return (
             <>
                 <Header/>
-                <Profile/>
-                <FooterJob/>
-                <Footer/>
+                {/* <Profile/> */}
+                <Rule/>
+                {/* <FooterJob/> */}
+                {/* <Footer/> */}
             </>
         )
     }
