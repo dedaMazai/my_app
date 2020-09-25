@@ -91,7 +91,7 @@ export default class EmployerAdd extends Component {
                     <div className="finalCalc">
                         <div className="one">
                             <p>Итого:</p>
-                            <input/>
+                            <input disabled value="231"/>
                             <p>р.</p>
                         </div>
                         <button>Оплатить</button>

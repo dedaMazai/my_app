@@ -8,6 +8,9 @@ import Profile from '../profile';
 import Friends from '../friends';
 import Employer from '../employer';
 import EmployerAdd from '../employerAdd';
+import Tab1 from '../tab1';
+import Tab2 from '../tab2';
+import Tab3 from '../tab3';
 
 import './mainPage.css';
 export default class MainPage extends Component {
@@ -25,9 +28,9 @@ export default class MainPage extends Component {
             <>
                 <Header/>
                 {/* <Profile/> */}
-                <Rule/>
+                <Tab1/>
                 {/* <FooterJob/> */}
-                {/* <Footer/> */}
+                <Footer/>
             </>
         )
     }
