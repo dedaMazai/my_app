@@ -13,16 +13,7 @@ li.footer {
 ul.footer {
     margin: 0;
     padding: 0;
-}
-
-div.footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-}
-
-.footerBlock {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
