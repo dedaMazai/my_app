@@ -12,6 +12,7 @@ import Tab1 from '../tab1';
 import Tab2 from '../tab2';
 import Tab3 from '../tab3';
 import Verification from '../verification';
+import Support from '../support';
 
 import './mainPage.css';
 export default class MainPage extends Component {
@@ -29,7 +30,7 @@ export default class MainPage extends Component {
             <>
                 <Header/>
                 {/* <Profile/> */}
-                <Verification/>
+                <Support/>
                 {/* <FooterJob/> */}
                 <Footer/>
             </>
