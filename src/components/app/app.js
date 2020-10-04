@@ -4,6 +4,7 @@ import Control from '../admin/control';
 import ControlPerson from '../admin/controlPerson';
 import controlReclama from '../admin/controlReclama';
 import Support from '../admin/support';
+import SupportPerson from '../admin/support/supportPerson';
 import MainPage from '../mainPage';
 import { Route, Switch } from 'react-router-dom';
 
@@ -19,6 +20,8 @@ export default class App extends Component {
                 <Route path = '/advisor_person' exact component={ControlPerson}/>
                 <Route path = '/advisor_advertising' exact component={controlReclama}/>
                 <Route path = '/support' exact component={Support}/>
+                <Route path = '/support' exact component={Support}/>
+                <Route path = '/supportPerson' exact component={SupportPerson}/>
                 <Route path = '/chaudmin' exact component={Control}/>
             </Switch>
         )
