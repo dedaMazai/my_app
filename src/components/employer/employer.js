@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 import './employer.css';
 export default class Employer extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             num: [1,2,3,4,5]
         };

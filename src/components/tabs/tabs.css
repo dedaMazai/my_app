@@ -6,6 +6,7 @@ li.tab {
     background-color: #D0ABFF;
     min-width: 115px;
     margin: 2%;
+    overflow: hidden;
 }
 
 li.tab > p {
@@ -45,12 +46,24 @@ li.tab1 {
     box-shadow: 7px 7px 20px 1px #2B6876;
 }
 
+li.tab1:hover {
+    animation-name: animation1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
 li.tab2 {
     border: 3px solid #851866;
     background-color: #FFA6E6;
     height: 25%;
     width: 32%;
     box-shadow: 0 7px 20px 1px #851866;
+}
+
+li.tab2:hover {
+    animation-name: animation2;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 li.tab3 {
@@ -61,7 +74,47 @@ li.tab3 {
     box-shadow: -7px 7px 20px 1px #5111A3;
 }
 
+li.tab3:hover {
+    animation-name: animation3;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
 ul.tabs {
     text-align: center;
     display: flex;
+    justify-content: center;
+}
+
+@keyframes animation1 {
+    from {
+        width: 25%;
+        box-shadow: 7px 7px 20px 1px #2B6876;
+    }
+    to {
+        width: 26%;
+        box-shadow: 10px 10px 30px 1px #2B6876;
+    }
+}
+
+@keyframes animation2 {
+    from {
+        width: 32%;
+        box-shadow: 0 7px 20px 1px #851866;
+    }
+    to {
+        width: 33%;
+        box-shadow: 0 10px 30px 1px #851866;
+    }
+}
+
+@keyframes animation3 {
+    from {
+        width: 28%;
+        box-shadow: -7px 7px 20px 1px #5111A3;
+    }
+    to {
+        width: 29%;
+        box-shadow: -10px 10px 30px 1px #5111A3;
+    }
 }

@@ -1,5 +1,6 @@
 const initialState = {
-    error: false
+    error: false,
+    buttons: 0
 }
 
 const reducer = (state = initialState, action) => {
@@ -8,6 +9,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 error: true
+            };
+        case 'SELECT_BUTTONS':
+            return {
+                ...state,
+                buttons: action.payload
             };
         default:
             return state;

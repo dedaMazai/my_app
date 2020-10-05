@@ -4,6 +4,14 @@ const onError = () => {
     }
 }
 
+const selectBut = (id) => {
+    return {
+        type: 'SELECT_BUTTONS',
+        payload: id
+    }
+}
+
 export {
-    onError
+    onError,
+    selectBut
 };
