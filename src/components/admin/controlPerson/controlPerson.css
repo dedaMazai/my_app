@@ -1,0 +1,20 @@
+.contr {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.plan, div.exactPlan {
+    padding: 0px 30px;
+    text-align: center;
+    font-size: larger;
+    background: linear-gradient(180deg, #B0A0C5 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.907115) 100%);
+    height: 100%;
+}
+
+div.plan > h1, div.plan > p, div.exactPlan > h1, div.exactPlan > p {
+    color: #281867;
+}
+
+div.exactPlan {
+    padding: 0px 30px;
+}

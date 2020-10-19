@@ -1,0 +1,119 @@
+.verification {
+    text-justify: auto;
+    background-color: #E0BCBC;
+    border-radius: 10px;
+    min-width: 670px;
+    padding: 20px;
+    margin: 30px 200px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.verificationHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.verificationCenter{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.verificationPhoto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.verificationPhoto img {
+    width: 180px;
+    border-radius: 5px;
+}
+
+.verificationCenter .url {
+    padding-left: 5px;
+    font-size: 0.9em;
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.verificationCenter button {
+    background-color: #00BC13;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    height: 35px;
+    width: 10%;
+    min-width: 130px;
+    border: 0px;
+    border-radius: 5px;
+    right: 0px;
+}
+.verificationButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.verificationPhoto button:active {
+    background-color: black;
+}
+.finalCalc button:active {
+    background: #0cb11c;
+}
+
+.verificationText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.verificationText h1 {
+    text-align:center;
+    margin: 0px;
+    color: #FF0000;
+    -webkit-text-stroke: 1px #9E0808;
+}
+
+.verificationText + p{
+    float: left;
+}
+
+.file-upload input[type="file"]{
+    display: none;
+}
+
+.file-upload {
+    height: 30px;
+    width: 180px;
+    background: #00BC13;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
+
+.file-upload:active {
+    background: #0cb11c;
+}
+
+.file-upload label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.verificationHead2 p {
+    color: #da0000;
+    font-size: 1.2em;
+    padding-left: 20px;
+}

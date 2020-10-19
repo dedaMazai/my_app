@@ -1,0 +1,101 @@
+.sup {
+    position: relative;
+    background-color: #dad8d8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 100px;
+    font-size: large;
+    margin-bottom: 120px;
+    min-height: 460px;
+}
+
+.sup > h1 {
+    margin: 0px;
+    font-size: 1.4em;
+}
+
+.supMessage > img {
+    height: 50px;
+    border-radius: 5px;
+}
+
+.supMessage > p {
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px 25px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.supMessage {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.supMessage.reverse {
+    flex-direction: row-reverse;
+}
+
+.supBottom {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    Justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 20px 0px 0px;
+    bottom: 15px;
+    width: 97%;
+}
+
+.supString {
+    resize: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+    height: 30px;
+    font-size: 0.9em;
+}
+
+.supFile {
+    display: none;
+}
+
+#supFile {
+    position: relative;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    background: #b9b9b9;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+#supFile label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.supBottom button {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: #b9b9b9;
+    font-weight: 600;
+}
+
+.supBottom button:active {
+    background: #bebebe;
+}

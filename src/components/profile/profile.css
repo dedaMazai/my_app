@@ -1,0 +1,12 @@
+li.mainPage{
+    list-style-type: none;
+    display:inline-block;
+    margin: 20px;
+}
+
+ul.mainPage {
+    padding: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: flex-start;
+}

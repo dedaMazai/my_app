@@ -1,0 +1,220 @@
+.tab3Add {
+    text-justify: auto;
+    background-color: rgba(255, 166, 230, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 200px 80px 200px;
+    font-size: large;
+    min-width: 670px;
+    font-weight: bold;
+}
+
+.tab3Head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab3Center{
+    display: flex;
+    flex-direction: column;
+}
+
+.tab3Photo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin: 0px 20px;
+}
+
+.tab3Photo img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.tab3Center .url {
+    padding-left: 5px;
+    font-size: 0.9em;
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.tab3Center .textTer {
+    padding-left: 5px;
+    font-size: 1.2em;
+    width: 100%;
+    height: 200px;
+    border: 0px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.tab3Calc .two {
+    display: flex;
+    align-items: baseline;
+    margin-left: 35px;
+}
+
+.tab3Calc .one {
+    display: flex;
+    align-items: baseline;
+    margin-right: 35px;
+    margin-left: 65px;
+}
+
+.tab3Calc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.tab3Calc input {
+    width: 59%;
+    padding-left: 5px;
+    font-size: 1em;
+    height: 30px;
+    margin-left: 5px;
+    min-width: 45px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.tab3Photo button:active {
+    background-color: black;
+}
+
+.finalCalc .one {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.finalCalc input {
+    padding-left: 5px;
+    font-size: 1em;
+    height: 30px;
+    margin: 0 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.finalCalc button {
+    background-color: #00BC13;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    height: 50px;
+    width: 10%;
+    min-width: 130px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.finalCalc button:active {
+    background: #0cb11c;
+}
+
+.finalCalc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.tab1Text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.tab3Text .one{
+    border-radius: 5px;
+    width: 65px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: 0px;
+    border-radius: 5px;
+    background: #00BC13;
+}
+
+.tab3Text + p, .tab3Text + p, .tab3Text + p {
+    float: left;
+}
+
+
+.close {
+    background-color: #FF0000;
+    color: white;
+    border-radius: 7px;
+    font-size: large;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+button.close {
+    height: 26px;
+    width: 26px;
+}
+
+p.close {
+    transform: rotate(-45deg);
+    padding: 0;
+    margin: 0;
+}
+
+.file-upload1 input[type="file"]{
+    display: none;
+}
+
+.file-upload1 {
+    height: 30px;
+    width: 250px;
+    background: #00BC13;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+.file-upload1:active {
+    background: #0cb11c;
+}
+
+.file-upload1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-decoration:none;
+}
+
+div.textTer1 {
+    display: flex;
+}
+
+div.url1 {
+    display: flex;
+}
+
+.url1 p{
+    margin: 3px 10px 0px 39px;
+}
+
+.textTer1 p {
+    margin: 3px 10px 0px 0px;
+}

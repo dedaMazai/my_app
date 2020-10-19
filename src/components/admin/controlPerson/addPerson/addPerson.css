@@ -1,0 +1,105 @@
+.addPer {
+    background-color: #E0DDDD;
+    border-radius: 10px;
+    margin:  20px auto;
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+    max-width: 70%;
+}
+
+.addPersonLeft  {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.addPersonTop  {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.addPersonButton {
+    display: flex;
+    flex-direction: row;
+}
+
+.addPersonAva {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.addPersonComment {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+}
+
+
+img.addPerson {
+    height: 55%;
+    max-height: 100px;
+    border-radius: 5px;
+    margin: 25px 25px 10px 25px;
+}
+
+div.addPersonAva, div.addPersonComment {
+    flex-direction: column;
+}
+
+div.addPersonButton {
+    flex-direction: row;
+}
+
+div.addPersonAva > button {
+    margin: 0px 25px 0px 25px;
+    background-color: #72A3EC;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    padding: 5px 0px;
+}
+
+.addPersonComment > textarea {
+    resize: none;
+    width: 100%;
+    height: 60%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.addPersonComment > input {
+    resize: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+    height: 25px;
+    font-size: 0.9em;
+    margin: 20px 0px 15px 0px;
+}
+
+.addPersonButton > p {
+    padding-left: 25px;
+    margin: 15px 0px;
+    font-weight: 600;
+}
+
+.addPersonButton > button {
+    margin: auto 25px;
+    background-color: #00BC13;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.95em;
+}
