@@ -5,7 +5,7 @@ const { createToken } = require('../services/auth-servise');
 function create (req, res, next) {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(422).json({errors: errors.array()})
+        return res.status(422).json({errors: errors.array(), message: "Некоректные данные при регистрации."})
     }
 
     User.findOne({where: {email: req.body.email}}).then(user => {
@@ -22,17 +22,32 @@ function create (req, res, next) {
         res.json(user);
     })
     .catch(error => {
-        res.status(error.statusCode || 4000).json({error: error.message});
+        res.status(error.statusCode || 400).json({error: error.message});
     })
 }
 
 function login (req, res, next) {
-    const loginUser = req.body;
-    User.login(loginUser).then(createToken).then(token => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(422).json({errors: errors.array(), message: "Некоректные данные при входе в систему."})
+    }
+    User.findOne({where: {email: req.body.email}}).then(async user => {
+        if (!user) {
+            return Promise.reject({statusCode: 422, message: "Такой пользователь не найден."});
+        } else {
+            const isMatch = await bcryptjs.compare(req.body.password, user.password);
+            if (!isMatch) {
+                return Promise.reject({statusCode: 422, message: "Пароль не верный."});
+            }
+            return user
+        }
+    })
+    .then(createToken)
+    .then(token => {
         res.json({ token });
-        next();
-    }).catch(error => {
-        res.status(401).json({ error });
+    })
+    .catch(error => {
+        res.status(400).json({ error });
     })
 }
 

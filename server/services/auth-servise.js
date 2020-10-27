@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/config');
 
 function createToken(userFromDB) {
-    const token = jwt.sign({id:userFromDB.dataValues.id}, config.secret, {expiresIn:86400})
+    const token = jwt.sign({id:userFromDB.dataValues.id, role:userFromDB.dataValues.role}, config.secret, {expiresIn:86400})
     return token;
 }
 
