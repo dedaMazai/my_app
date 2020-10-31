@@ -25,6 +25,11 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+      },
+      profile: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        defaultValue: 'NoMore'
       }
     });
   },

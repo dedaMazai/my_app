@@ -12,10 +12,10 @@ function create (req, res, next) {
         if (user) {
             return Promise.reject({statusCode: 422, message: "This email is already used"});
         } else {
-            const {login, email, password} = req.body;
+            const {login, email, password, profile} = req.body;
             const salt = bcryptjs.genSaltSync(10);
             const passwordHash = bcryptjs.hashSync(password, salt);
-            return User.create({login, email, password: passwordHash});
+            return User.create({login, email, password: passwordHash, profile});
         }
     })
     .then(user => {

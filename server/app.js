@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const userController = require ('./controllers/user-controller');
-const { sequelize } = require('./models');
 const { userValidator, loginValidator } = require ('./services/validators');
 const { verifyToken } = require ('./services/auth-servise');
 
@@ -12,7 +11,7 @@ app.use('/api/*', verifyToken);
 app.get('/hello', (req, res, next) => {
     console.log('1111111111');
     next();
-}, (req, res, next) => {
+}, (req, res) => {
     console.log('2222222222222')
     res.send('Hello');
 });
