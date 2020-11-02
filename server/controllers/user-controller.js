@@ -44,7 +44,7 @@ function login (req, res, next) {
     })
     .then(createToken)
     .then(token => {
-        res.json({ token });
+        res.json(token);
     })
     .catch(error => {
         res.status(400).json({ error });

@@ -3,7 +3,7 @@ const config = require('../config/config');
 
 function createToken(userFromDB) {
     const token = jwt.sign({id: userFromDB.id, role: userFromDB.role}, config.secret, {expiresIn:86400})
-    return token;
+    return {token: token, id: userFromDB.id};
 }
 
 function verifyToken(req, res, next) {
@@ -18,7 +18,6 @@ function verifyToken(req, res, next) {
         })
     }else{
         req.credentials = { role: 'guest' };
-        next();
     }
 }
 

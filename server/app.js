@@ -6,7 +6,7 @@ const { verifyToken } = require ('./services/auth-servise');
 
 app.use(express.json());
 
-app.use('/api/*', verifyToken);
+app.use('/api/profile/*', verifyToken);
 
 app.get('/hello', (req, res, next) => {
     console.log('1111111111');

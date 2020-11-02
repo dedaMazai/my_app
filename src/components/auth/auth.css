@@ -54,6 +54,11 @@ h2 {
   border-radius: 0 0 10px 10px;
 }
 
+div.massage > h2 {
+  color: #fa7f7f;
+}
+
+
 h2.inactive {
   color: #cccccc;
   cursor: pointer;

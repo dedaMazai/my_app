@@ -1,36 +1,44 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {useHttp} from '../../hooks/http.hook';
-import {useMessage} from '../../hooks/message.hook'
+import {AuthContext} from '../context/AuthContext';
 
 import './auth.css';
 function Auth ()  {
-    const message = useMessage()
-    const {loading, request, error, clearError} = useHttp();
+    const auth = useContext(AuthContext);
+    const {loading, request, error} = useHttp();
     const [form, setForm] = useState({
-        num: 0, email: '', password: '', login: ''
+        num: 0, email: '', password: '', login: '', massage: ''
     });
+
+    useEffect(() => {
+        setForm({ ...form, massage: error })
+    }, [])
 
     const changeHandler = event => {
         setForm({ ...form, [event.target.name]: event.target.value })
     };
 
     const authDown = (press) => {
-        setForm({ ...form, num: press })
+        setForm({ num: press })
     };
 
     const registerHandler = async () => {
         try {
-          const data = await request('/api/signup', 'POST', {...form});
-          message(data.message)
-        } catch (e) {}
+            const data = await request('/api/signup', 'POST', {...form});
+            setForm({ ...form, massage: data.message })
+        } catch (e) {
+            setForm({ ...form, massage: e.message })
+        }
     }
 
     const loginHandler = async () => {
-        // console.log({...form});
         try {
           const data = await request('/api/login', 'POST', {...form});
-          message(data.message)
-        } catch (e) {}
+          auth.login(data.token, data.id)
+          setForm({ ...form, massage: data.message })
+        } catch (e) {
+            setForm({ ...form, massage: e.message })
+        }
     }
 
     if (form.num === 0) {
@@ -67,6 +75,9 @@ function Auth ()  {
                         </div>
                     </div>
                 </div>
+                <div className={form.massage === '' || form.massage === null || form.massage === undefined ? "hidden" : "massage"}>
+                    <h2> {form.massage} </h2>
+                </div>
             </div>
         )
     }else if(form.num === 1){
@@ -79,29 +90,30 @@ function Auth ()  {
                         <form>
                             <input  type="text"
                                     id="name"
-                                    className="fadeIn second" 
-                                    name="login"
+                                    className="fadeIn second"
+                                    name="namePerson"
                                     placeholder="Ф.И.О."/>
-                            <input  type="email" 
-                                    id="email" 
-                                    className="fadeIn second" 
-                                    name="email" 
-                                    placeholder="Email" 
+                            <input  type="email"
+                                    id="email"
+                                    className="fadeIn second"
+                                    name="email"
+                                    placeholder="Email"
                                     onChange={changeHandler}/>
-                            <input  type="password" 
-                                    id="password" 
-                                    className="fadeIn second" 
-                                    name="password" 
-                                    placeholder="Пароль" 
+                            <input  type="password"
+                                    id="password"
+                                    className="fadeIn second"
+                                    name="password"
+                                    placeholder="Пароль"
                                     onChange={changeHandler}/>
-                            <input  type="password" 
-                                    id="password" 
-                                    className="fadeIn second" 
+                            <input  type="password"
+                                    id="password"
+                                    className="fadeIn second"
                                     name="passwordRepeat" placeholder="Повторите пароль" onChange={changeHandler}/>
-                            <input  type="tel" 
-                                    id="email" 
-                                    className="fadeIn second" 
-                                    name="login" 
+                            <input  type="tel"
+                                    id="email"
+                                    className="fadeIn second"
+                                    name="login"
+                                    onChange={changeHandler}
                                     placeholder="Телефон: +7..."/>
                             <input  className="fadeIn fourth"
                                     id="submit"
@@ -112,18 +124,24 @@ function Auth ()  {
                         </form>
                     </div>
                 </div>
+                <div className={form.massage === '' || form.massage === null || form.massage === undefined ? "hidden" : "massage"}>
+                    <h2> {form.massage} </h2>
+                </div>
             </div>
         )
     }else{
         return (
             <div className="wrapper fadeInDown">
-            <div id="formContent">
-                <h2 className="active"> Восстановление пароля </h2>
-                <div className="fadeIn second">
-                <input type="tel" id="email" className="fadeIn second" name="login" placeholder="Телефон: +7..."/>
-                    <input type="button" className="fadeIn fourth" onClick={() =>this.authDown(0)} value="Отправить пароль на email"/>
+                <div id="formContent">
+                    <h2 className="active"> Восстановление пароля </h2>
+                    <div className="fadeIn second">
+                    <input type="tel" id="email" className="fadeIn second" name="login" placeholder="Телефон: +7..."/>
+                        <input type="button" className="fadeIn fourth" onClick={() =>this.authDown(0)} value="Отправить пароль на email"/>
+                    </div>
                 </div>
-            </div>
+                <div className={form.massage === '' || form.massage === null || form.massage === undefined ? "hidden" : "massage"}>
+                    <h2> {form.massage} </h2>
+                </div>
             </div>
         )
     }
