@@ -20,7 +20,10 @@ app.post('/api/signup', userValidator, userController.create);
 app.post('/api/login', loginValidator, userController.login);
 
 
-app.listen(4000, () => {
+app.listen(4000, (err) => {
+    if (err) {
+        throw Error(err);
+    }
     console.log('Server started 1')
 })
 
